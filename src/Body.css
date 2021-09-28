@@ -1,0 +1,68 @@
+table{
+    width: 1100px;
+}
+thead{
+    font-weight: bold;
+    background-color: #EAE9E9;
+}
+td{
+    padding: 10px;
+    padding-left:30px ;
+}
+
+#pen{
+    display: inline-block;
+    margin: 20px;
+}
+
+#delete{
+    display: inline-block;
+    margin: 20px;
+}
+
+#addbtn{
+    display: inline-block;
+    width: 132px;
+    height: 41px;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    background-color: #9D0BEE;
+    cursor: pointer;
+}
+#toptable{
+    margin: 30px 0px 30px 50px;
+}
+#ftable{
+    margin: 10px 30px 0px 50px;
+}
+
+@media only screen and (max-device-width: 770px){
+    table{
+        width: 800px;
+    }
+    #toptable{
+        margin: 0px;
+        margin-left: -145px;
+    }
+    #ftable{
+        margin-left: -145px;
+    }
+
+}
+
+
+@media only screen and (max-device-width: 440px){
+    table{
+        width: 400px;
+    }
+    #toptable{
+        margin: 0px;
+        margin-top: 50px;
+        margin-left: -280px;
+    }
+    #ftable{
+        margin-left: -280px;
+    }
+
+}

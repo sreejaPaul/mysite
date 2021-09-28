@@ -1,0 +1,54 @@
+#sidenav{
+    width: 280px;
+    background-color: #EAE9E9;
+}
+.navitems{
+    padding: 15px;
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#logo{
+    width: 180px;
+    margin-left: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+.navtext{
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+
+@media only screen and (max-device-width: 770px){
+    #sidenav{
+        width: 150px;
+    }
+    .navitems{
+        padding: 15px;
+    }
+    
+    #logo{
+        width: 100px;
+       
+    }
+
+}
+
+
+@media only screen and (max-device-width: 440px){
+    #sidenav{
+        width: 80px;
+    }
+    .navitems{
+        padding: 5px;
+    }
+    
+    #logo{
+        width: 80px;
+       
+    }
+
+}

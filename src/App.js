@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidenavbar from "./Sidenavbar";
+import {Route} from 'react-router-dom';
+import Topbar from "./Topbar";
+import Body from './Body';
+import Management from './Management';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidenavbar/>
+      <Route path="/Access-Control" exact>
+        <Topbar/>
+        <Body/>
+      </Route>
+      <Route path="/Access-Control/Management-Team" exact>
+        <Topbar/>
+        <Management/>
+      </Route>
+
     </div>
   );
 }
